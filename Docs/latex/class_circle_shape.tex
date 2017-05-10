@@ -1,0 +1,135 @@
+\section{Circle\+Shape Class Reference}
+\label{class_circle_shape}\index{Circle\+Shape@{Circle\+Shape}}
+Inheritance diagram for Circle\+Shape\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_circle_shape}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Circle\+Shape} ()
+\item 
+void \textbf{ set\+Dimensions} (float x, float y, float r)
+\item 
+void \textbf{ move} (int x, int y)
+\item 
+Shape \textbf{ get\+Shape} ()
+\item 
+boolean \textbf{ is\+Hit} (float x, float y)
+\item 
+void \textbf{ set\+Color} (Color new\+Color)
+\item 
+Color \textbf{ get\+Color} ()
+\item 
+void \textbf{ resize} (float value)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Klasa odpowiedzialna za koło. \begin{DoxyAuthor}{Author}
+Michał Treter 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_circle_shape_a7f25499c232d3e71ce60fb94ff957aa0}} 
+\index{Circle\+Shape@{Circle\+Shape}!Circle\+Shape@{Circle\+Shape}}
+\index{Circle\+Shape@{Circle\+Shape}!Circle\+Shape@{Circle\+Shape}}
+\subsubsection{Circle\+Shape()}
+{\footnotesize\ttfamily Circle\+Shape.\+Circle\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Konstruktor klasy, nadaja kołu pusty kształt. 
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_circle_shape_af3c09f8c923de5288fbf29b358edb83c}} 
+\index{Circle\+Shape@{Circle\+Shape}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!Circle\+Shape@{Circle\+Shape}}
+\subsubsection{get\+Color()}
+{\footnotesize\ttfamily Color Circle\+Shape.\+get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda zwracająca kolor figury. \begin{DoxyReturn}{Returns}
+Zwrócony kolor jaki figura aktualnie posiada. 
+\end{DoxyReturn}
+\mbox{\label{class_circle_shape_acf52c076e8572ec493865edf71d7ceee}} 
+\index{Circle\+Shape@{Circle\+Shape}!get\+Shape@{get\+Shape}}
+\index{get\+Shape@{get\+Shape}!Circle\+Shape@{Circle\+Shape}}
+\subsubsection{get\+Shape()}
+{\footnotesize\ttfamily Shape Circle\+Shape.\+get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda, która przechytuje i zwraca kształt figury. \begin{DoxyReturn}{Returns}
+zwrócony kształ figury. 
+\end{DoxyReturn}
+\mbox{\label{class_circle_shape_ae7ab9718a4fa67def8410409e5d7934c}} 
+\index{Circle\+Shape@{Circle\+Shape}!is\+Hit@{is\+Hit}}
+\index{is\+Hit@{is\+Hit}!Circle\+Shape@{Circle\+Shape}}
+\subsubsection{is\+Hit()}
+{\footnotesize\ttfamily boolean Circle\+Shape.\+is\+Hit (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Metoda odpowiedzialna za sprawdzenie czy dane współrzedne znajdują sie w figurze. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Współrzędna X kliknięcia. \\
+\hline
+{\em y} & Współrzędna Y kliknięcia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartość logiczna, prawdziwa jeśli punkty są w figurze, zaś fałyszwa w przeciwnym wypadku. 
+\end{DoxyReturn}
+\mbox{\label{class_circle_shape_a83c35d3d02ca6e6e982e319e2d432973}} 
+\index{Circle\+Shape@{Circle\+Shape}!move@{move}}
+\index{move@{move}!Circle\+Shape@{Circle\+Shape}}
+\subsubsection{move()}
+{\footnotesize\ttfamily void Circle\+Shape.\+move (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Metoda odpowiedzialna za przemieszczanie koła. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Wartość o którą nalezy przesunąć koło w osi X. \\
+\hline
+{\em y} & Wartość o którą nalezy przesunąć koło w osi Y. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_circle_shape_a7d94c8bf4503a5ef8ea79ee0e88dc7a3}} 
+\index{Circle\+Shape@{Circle\+Shape}!resize@{resize}}
+\index{resize@{resize}!Circle\+Shape@{Circle\+Shape}}
+\subsubsection{resize()}
+{\footnotesize\ttfamily void Circle\+Shape.\+resize (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+Metoda zmieniająca rozmiar figury. 
+\begin{DoxyParams}{Parameters}
+{\em value} & Wartość o jaką zostanie zwiększona figura. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_circle_shape_ac545acbc5f13226ebb715731db3f9a5d}} 
+\index{Circle\+Shape@{Circle\+Shape}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Circle\+Shape@{Circle\+Shape}}
+\subsubsection{set\+Color()}
+{\footnotesize\ttfamily void Circle\+Shape.\+set\+Color (\begin{DoxyParamCaption}\item[{Color}]{new\+Color }\end{DoxyParamCaption})}
+
+Metoda ustawiająca kolor naszej figurze. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Color} & Nowy kolor jaki należy ustawić figurze. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_circle_shape_ad10715ca361cc125701d00d7046aa843}} 
+\index{Circle\+Shape@{Circle\+Shape}!set\+Dimensions@{set\+Dimensions}}
+\index{set\+Dimensions@{set\+Dimensions}!Circle\+Shape@{Circle\+Shape}}
+\subsubsection{set\+Dimensions()}
+{\footnotesize\ttfamily void Circle\+Shape.\+set\+Dimensions (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{r }\end{DoxyParamCaption})}
+
+Metoda publiczna, której zadaniem jest ustawić rozmiar i położenie koła. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Wartość w osi X. \\
+\hline
+{\em y} & Wartość w osi Y. \\
+\hline
+{\em r} & Wartość promienia okręgu. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/\+Adimus/\+Desktop/\+N\+E\+T\+B\+I\+N\+Z/\+Geo\+Graphic\+X/src/Circle\+Shape.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+\section{Utilities Class Reference}
+\label{class_utilities}\index{Utilities@{Utilities}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \textbf{ find\+Lower} (int cord1, int cord2)
+\item 
+static int \textbf{ find\+Collision} (Array\+List$<$ \textbf{ Shape\+Base} $>$ given\+List, int cordX, int cordY)
+\item 
+static void \textbf{ save\+File} (\textbf{ Geo\+GraphicX} applet\+Reference, Array\+List$<$ \textbf{ Shape\+Base} $>$ given\+List)
+\item 
+static Array\+List$<$ \textbf{ Shape\+Base} $>$ \textbf{ load\+File} (\textbf{ Geo\+GraphicX} applet\+Reference)  throws Class\+Not\+Found\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa zawierająca funkcje ułatwiające działanie programu. \begin{DoxyAuthor}{Author}
+Michał Treter 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_utilities_a65243cac27f1c4cc2d7f50e17915f942}} 
+\index{Utilities@{Utilities}!find\+Collision@{find\+Collision}}
+\index{find\+Collision@{find\+Collision}!Utilities@{Utilities}}
+\subsubsection{find\+Collision()}
+{\footnotesize\ttfamily static int Utilities.\+find\+Collision (\begin{DoxyParamCaption}\item[{Array\+List$<$ \textbf{ Shape\+Base} $>$}]{given\+List,  }\item[{int}]{cordX,  }\item[{int}]{cordY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Funkcja znajdująca kolizję punktu kliknięcia z jedną z figur. 
+\begin{DoxyParams}{Parameters}
+{\em given\+List} & Lista figur. \\
+\hline
+{\em cordX} & X kliknięcia. \\
+\hline
+{\em cordY} & Y Kliknięcia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Numer elementu na liście z którym jest wykryta kolizja. Lub -\/1 kiedy jej nie ma. 
+\end{DoxyReturn}
+\mbox{\label{class_utilities_ac1e53d589e8d32c1fb0f920ebf01419f}} 
+\index{Utilities@{Utilities}!find\+Lower@{find\+Lower}}
+\index{find\+Lower@{find\+Lower}!Utilities@{Utilities}}
+\subsubsection{find\+Lower()}
+{\footnotesize\ttfamily static int Utilities.\+find\+Lower (\begin{DoxyParamCaption}\item[{int}]{cord1,  }\item[{int}]{cord2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Funkcja zwracająca mniejszą wartość. 
+\begin{DoxyParams}{Parameters}
+{\em cord1} & Wartość pierwsza. \\
+\hline
+{\em cord2} & Wartość druga. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mniejsza z tych wartości. 
+\end{DoxyReturn}
+\mbox{\label{class_utilities_affd5c9fd453405623493f7252deb1101}} 
+\index{Utilities@{Utilities}!load\+File@{load\+File}}
+\index{load\+File@{load\+File}!Utilities@{Utilities}}
+\subsubsection{load\+File()}
+{\footnotesize\ttfamily static Array\+List$<$\textbf{ Shape\+Base}$>$ Utilities.\+load\+File (\begin{DoxyParamCaption}\item[{\textbf{ Geo\+GraphicX}}]{applet\+Reference }\end{DoxyParamCaption}) throws Class\+Not\+Found\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Funkcja wczytująca listę figur z pliku. 
+\begin{DoxyParams}{Parameters}
+{\em applet\+Reference} & Referencja do głównego apletu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista wczytana z pliku. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Class\+Not\+Found\+Exception} & Wyjątek kiedy nastąpi niezgodność klas. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\label{class_utilities_a2e7fabe3109d97ded6a995c15657d487}} 
+\index{Utilities@{Utilities}!save\+File@{save\+File}}
+\index{save\+File@{save\+File}!Utilities@{Utilities}}
+\subsubsection{save\+File()}
+{\footnotesize\ttfamily static void Utilities.\+save\+File (\begin{DoxyParamCaption}\item[{\textbf{ Geo\+GraphicX}}]{applet\+Reference,  }\item[{Array\+List$<$ \textbf{ Shape\+Base} $>$}]{given\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Funkcja eksportująca listę obiektów do pliku. 
+\begin{DoxyParams}{Parameters}
+{\em applet\+Reference} & Referencja do głównego apletu. \\
+\hline
+{\em given\+List} & Lista figur. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/\+Adimus/\+Desktop/\+N\+E\+T\+B\+I\+N\+Z/\+Geo\+Graphic\+X/src/Utilities.\+java\end{DoxyCompactItemize}

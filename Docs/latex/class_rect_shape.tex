@@ -1,0 +1,150 @@
+\section{Rect\+Shape Class Reference}
+\label{class_rect_shape}\index{Rect\+Shape@{Rect\+Shape}}
+Inheritance diagram for Rect\+Shape\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_rect_shape}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Rect\+Shape} ()
+\item 
+void \textbf{ set\+Dimensions} (float x, float y, float width, float height)
+\item 
+void \textbf{ move} (int x, int y)
+\item 
+Shape \textbf{ get\+Shape} ()
+\item 
+void \textbf{ set\+Color} (Color new\+Color)
+\item 
+boolean \textbf{ is\+Hit} (float x, float y)
+\item 
+Color \textbf{ get\+Color} ()
+\item 
+void \textbf{ resize} (float value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Rectangle2\+D.\+Float \textbf{ shape\+Of\+Figure} = new Rectangle2\+D.\+Float()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa odpowiedzialna za prostokąt. \begin{DoxyAuthor}{Author}
+Michał Treter 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_rect_shape_a86cf01c77c39a2052a3706747c9ae27e}} 
+\index{Rect\+Shape@{Rect\+Shape}!Rect\+Shape@{Rect\+Shape}}
+\index{Rect\+Shape@{Rect\+Shape}!Rect\+Shape@{Rect\+Shape}}
+\subsubsection{Rect\+Shape()}
+{\footnotesize\ttfamily Rect\+Shape.\+Rect\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Konstruktor klasy, zeruje kształt prostokątu. 
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_rect_shape_a313190c5754f9d952657f3234cbc50ff}} 
+\index{Rect\+Shape@{Rect\+Shape}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!Rect\+Shape@{Rect\+Shape}}
+\subsubsection{get\+Color()}
+{\footnotesize\ttfamily Color Rect\+Shape.\+get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda zwracjąca akutalny kolor figury. \begin{DoxyReturn}{Returns}
+aktualny kolor figury. 
+\end{DoxyReturn}
+\mbox{\label{class_rect_shape_ae9313879935fedaa1a1f881fbab9b9cf}} 
+\index{Rect\+Shape@{Rect\+Shape}!get\+Shape@{get\+Shape}}
+\index{get\+Shape@{get\+Shape}!Rect\+Shape@{Rect\+Shape}}
+\subsubsection{get\+Shape()}
+{\footnotesize\ttfamily Shape Rect\+Shape.\+get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda zwracająca kształt figury. \begin{DoxyReturn}{Returns}
+Kształ prostokątu. 
+\end{DoxyReturn}
+\mbox{\label{class_rect_shape_a326606d5a71b40cb81324c9222f341e0}} 
+\index{Rect\+Shape@{Rect\+Shape}!is\+Hit@{is\+Hit}}
+\index{is\+Hit@{is\+Hit}!Rect\+Shape@{Rect\+Shape}}
+\subsubsection{is\+Hit()}
+{\footnotesize\ttfamily boolean Rect\+Shape.\+is\+Hit (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Metoda odpowiedzialna za sprawdzenie czy dane współrzedne znajdują sie w figurze. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Współrzędna X kliknięcia. \\
+\hline
+{\em y} & Współrzędna Y kliknięcia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartość logiczna, prawdziwa jeśli punkty są w figurze, zaś fałyszwa w przeciwnym wypadku. 
+\end{DoxyReturn}
+\mbox{\label{class_rect_shape_a130c9da5f098dc698d708419f9eff893}} 
+\index{Rect\+Shape@{Rect\+Shape}!move@{move}}
+\index{move@{move}!Rect\+Shape@{Rect\+Shape}}
+\subsubsection{move()}
+{\footnotesize\ttfamily void Rect\+Shape.\+move (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Metoda przesuwająca prostokąt w osi X i osi Y. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Wartość o jaką należy przesunąć figurę w osi X. \\
+\hline
+{\em y} & Wartość o jaką należy przesunąć figurę w osi Y. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_rect_shape_aa4fad2d2ada5e571b4293f08818ec133}} 
+\index{Rect\+Shape@{Rect\+Shape}!resize@{resize}}
+\index{resize@{resize}!Rect\+Shape@{Rect\+Shape}}
+\subsubsection{resize()}
+{\footnotesize\ttfamily void Rect\+Shape.\+resize (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+Metoda zmieniająca rozmiar figur. 
+\begin{DoxyParams}{Parameters}
+{\em value} & Wartość o jaką należy zmienić rozmiar figury. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_rect_shape_a1776cff5c8be73cef31d0365c674f6eb}} 
+\index{Rect\+Shape@{Rect\+Shape}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Rect\+Shape@{Rect\+Shape}}
+\subsubsection{set\+Color()}
+{\footnotesize\ttfamily void Rect\+Shape.\+set\+Color (\begin{DoxyParamCaption}\item[{Color}]{new\+Color }\end{DoxyParamCaption})}
+
+Metoda ustawiająca figurze nowy kolor. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Color} & Nowy kolor. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_rect_shape_af02ce0a1618c6786ef95d7ee41ba006b}} 
+\index{Rect\+Shape@{Rect\+Shape}!set\+Dimensions@{set\+Dimensions}}
+\index{set\+Dimensions@{set\+Dimensions}!Rect\+Shape@{Rect\+Shape}}
+\subsubsection{set\+Dimensions()}
+{\footnotesize\ttfamily void Rect\+Shape.\+set\+Dimensions (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})}
+
+Metoda ustawiająca rozmiar oraz polożenie prostokątu. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Punkt na osi X. \\
+\hline
+{\em y} & Punkt na osi Y. \\
+\hline
+{\em width} & Szerokość prostokąta. \\
+\hline
+{\em height} & Wysokość prostokąta. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{class_rect_shape_a2fa9784d223de713a36b232bcf28e3bc}} 
+\index{Rect\+Shape@{Rect\+Shape}!shape\+Of\+Figure@{shape\+Of\+Figure}}
+\index{shape\+Of\+Figure@{shape\+Of\+Figure}!Rect\+Shape@{Rect\+Shape}}
+\subsubsection{shape\+Of\+Figure}
+{\footnotesize\ttfamily Rectangle2\+D.\+Float Rect\+Shape.\+shape\+Of\+Figure = new Rectangle2\+D.\+Float()\hspace{0.3cm}{\ttfamily [protected]}}
+
+Kształt prostokątu. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/\+Adimus/\+Desktop/\+N\+E\+T\+B\+I\+N\+Z/\+Geo\+Graphic\+X/src/Rect\+Shape.\+java\end{DoxyCompactItemize}

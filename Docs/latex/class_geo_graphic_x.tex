@@ -1,0 +1,151 @@
+\section{Geo\+GraphicX Class Reference}
+\label{class_geo_graphic_x}\index{Geo\+GraphicX@{Geo\+GraphicX}}
+Inheritance diagram for Geo\+GraphicX\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_geo_graphic_x}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ init} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \textbf{ main} (String[$\,$] args)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \textbf{ is\+Drawing\+Square} = false
+\item 
+boolean \textbf{ is\+Drawing\+Circle} = false
+\item 
+boolean \textbf{ is\+Drawing\+Poly} = false
+\item 
+boolean \textbf{ is\+Changing\+Color} = false
+\item 
+boolean \textbf{ is\+Resizing\+Figure} = false
+\item 
+boolean \textbf{ is\+Busy} = false
+\item 
+boolean \textbf{ is\+Deleting} = false
+\item 
+Array\+List$<$ \textbf{ Shape\+Base} $>$ \textbf{ drawable\+Objects} = new Array\+List$<$$>$()
+\item 
+Array\+List$<$ Shape $>$ \textbf{ temporary\+Drawable\+Objects} = new Array\+List$<$$>$()
+\item 
+\textbf{ temp\+Circle} \textbf{ pointer\+Circle} = new \textbf{ temp\+Circle}()
+\item 
+Color \textbf{ background\+Color} = new Color(255, 255, 255, 255)
+\item 
+\textbf{ Main\+Application\+Frame} \textbf{ main\+Frame\+Reference}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Główna klasa programu, zawiera metodę main oraz rozszerza aplet. \begin{DoxyAuthor}{Author}
+Michał Treter 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_geo_graphic_x_a8266e087ac487e55560443a44f5c87af}} 
+\index{Geo\+GraphicX@{Geo\+GraphicX}!init@{init}}
+\index{init@{init}!Geo\+GraphicX@{Geo\+GraphicX}}
+\subsubsection{init()}
+{\footnotesize\ttfamily void Geo\+Graphic\+X.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda inicjalizująca apletu. \mbox{\label{class_geo_graphic_x_a4cbdc0d31f6032904eae7ecb20b9fc3a}} 
+\index{Geo\+GraphicX@{Geo\+GraphicX}!main@{main}}
+\index{main@{main}!Geo\+GraphicX@{Geo\+GraphicX}}
+\subsubsection{main()}
+{\footnotesize\ttfamily static void Geo\+Graphic\+X.\+main (\begin{DoxyParamCaption}\item[{String [$\,$]}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Główna metoda main naszej aplikacji 
+\begin{DoxyParams}{Parameters}
+{\em args} & parametry wpisane przy uruchumieniu. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{class_geo_graphic_x_a08b05acbc89547ffa879e3e1c14b03e8}} 
+\index{Geo\+GraphicX@{Geo\+GraphicX}!background\+Color@{background\+Color}}
+\index{background\+Color@{background\+Color}!Geo\+GraphicX@{Geo\+GraphicX}}
+\subsubsection{background\+Color}
+{\footnotesize\ttfamily Color Geo\+Graphic\+X.\+background\+Color = new Color(255, 255, 255, 255)}
+
+Pole przechowujące informacjie o kolorze tła. \mbox{\label{class_geo_graphic_x_afd603afbd5712aafc94fce5071103420}} 
+\index{Geo\+GraphicX@{Geo\+GraphicX}!drawable\+Objects@{drawable\+Objects}}
+\index{drawable\+Objects@{drawable\+Objects}!Geo\+GraphicX@{Geo\+GraphicX}}
+\subsubsection{drawable\+Objects}
+{\footnotesize\ttfamily Array\+List$<$\textbf{ Shape\+Base}$>$ Geo\+Graphic\+X.\+drawable\+Objects = new Array\+List$<$$>$()}
+
+Lista zawierająca figury do rysowania. \mbox{\label{class_geo_graphic_x_a787097390f89889774c1450be0b9b391}} 
+\index{Geo\+GraphicX@{Geo\+GraphicX}!is\+Busy@{is\+Busy}}
+\index{is\+Busy@{is\+Busy}!Geo\+GraphicX@{Geo\+GraphicX}}
+\subsubsection{is\+Busy}
+{\footnotesize\ttfamily boolean Geo\+Graphic\+X.\+is\+Busy = false}
+
+Zmienna logiczna określająca czy jest teraz aktywny jakikolwiek proces modyfikowania figury w aplikacji. \mbox{\label{class_geo_graphic_x_a60c08c0d7db0ced8cd69b14e1cfd8043}} 
+\index{Geo\+GraphicX@{Geo\+GraphicX}!is\+Changing\+Color@{is\+Changing\+Color}}
+\index{is\+Changing\+Color@{is\+Changing\+Color}!Geo\+GraphicX@{Geo\+GraphicX}}
+\subsubsection{is\+Changing\+Color}
+{\footnotesize\ttfamily boolean Geo\+Graphic\+X.\+is\+Changing\+Color = false}
+
+Zmienna logiczna określająca czy jest teraz aktywny proces zmiany koloru figury. \mbox{\label{class_geo_graphic_x_aad9cb8ba8a8fc82934cb0b4220ab3d72}} 
+\index{Geo\+GraphicX@{Geo\+GraphicX}!is\+Deleting@{is\+Deleting}}
+\index{is\+Deleting@{is\+Deleting}!Geo\+GraphicX@{Geo\+GraphicX}}
+\subsubsection{is\+Deleting}
+{\footnotesize\ttfamily boolean Geo\+Graphic\+X.\+is\+Deleting = false}
+
+Zmienna logiczna określająca czy jest teraz aktywny proces usuwania figury. \mbox{\label{class_geo_graphic_x_ade4a70db318177597dd2ab2bd7982d19}} 
+\index{Geo\+GraphicX@{Geo\+GraphicX}!is\+Drawing\+Circle@{is\+Drawing\+Circle}}
+\index{is\+Drawing\+Circle@{is\+Drawing\+Circle}!Geo\+GraphicX@{Geo\+GraphicX}}
+\subsubsection{is\+Drawing\+Circle}
+{\footnotesize\ttfamily boolean Geo\+Graphic\+X.\+is\+Drawing\+Circle = false}
+
+Zmienna logiczna określająca czy jest teraz aktywny proces ryoswania okręgu. \mbox{\label{class_geo_graphic_x_ac5d66e793eed874bcfc1883499c255f1}} 
+\index{Geo\+GraphicX@{Geo\+GraphicX}!is\+Drawing\+Poly@{is\+Drawing\+Poly}}
+\index{is\+Drawing\+Poly@{is\+Drawing\+Poly}!Geo\+GraphicX@{Geo\+GraphicX}}
+\subsubsection{is\+Drawing\+Poly}
+{\footnotesize\ttfamily boolean Geo\+Graphic\+X.\+is\+Drawing\+Poly = false}
+
+Zmienna logiczna określająca czy jest teraz aktywny proces ryoswania wielokątu. \mbox{\label{class_geo_graphic_x_ad3bc7f2c5b0c5db882e21c5c433604ee}} 
+\index{Geo\+GraphicX@{Geo\+GraphicX}!is\+Drawing\+Square@{is\+Drawing\+Square}}
+\index{is\+Drawing\+Square@{is\+Drawing\+Square}!Geo\+GraphicX@{Geo\+GraphicX}}
+\subsubsection{is\+Drawing\+Square}
+{\footnotesize\ttfamily boolean Geo\+Graphic\+X.\+is\+Drawing\+Square = false}
+
+Zmienna logiczna określająca czy jest teraz aktywny proces ryoswania prostokąta. \mbox{\label{class_geo_graphic_x_a0814229dbc30bdd2a5aca2b50bd258df}} 
+\index{Geo\+GraphicX@{Geo\+GraphicX}!is\+Resizing\+Figure@{is\+Resizing\+Figure}}
+\index{is\+Resizing\+Figure@{is\+Resizing\+Figure}!Geo\+GraphicX@{Geo\+GraphicX}}
+\subsubsection{is\+Resizing\+Figure}
+{\footnotesize\ttfamily boolean Geo\+Graphic\+X.\+is\+Resizing\+Figure = false}
+
+Zmienna logiczna określająca czy jest teraz aktywny proces zmiany rozmiaru figury. \mbox{\label{class_geo_graphic_x_a199634684b043e71e078341b1c8c8989}} 
+\index{Geo\+GraphicX@{Geo\+GraphicX}!main\+Frame\+Reference@{main\+Frame\+Reference}}
+\index{main\+Frame\+Reference@{main\+Frame\+Reference}!Geo\+GraphicX@{Geo\+GraphicX}}
+\subsubsection{main\+Frame\+Reference}
+{\footnotesize\ttfamily \textbf{ Main\+Application\+Frame} Geo\+Graphic\+X.\+main\+Frame\+Reference}
+
+Odwołanie do głównej ramki aplikacji, w której wszystko sie odbywa. \mbox{\label{class_geo_graphic_x_a9000101765183c1fb3e4a69b866cb45d}} 
+\index{Geo\+GraphicX@{Geo\+GraphicX}!pointer\+Circle@{pointer\+Circle}}
+\index{pointer\+Circle@{pointer\+Circle}!Geo\+GraphicX@{Geo\+GraphicX}}
+\subsubsection{pointer\+Circle}
+{\footnotesize\ttfamily \textbf{ temp\+Circle} Geo\+Graphic\+X.\+pointer\+Circle = new \textbf{ temp\+Circle}()}
+
+Celownik, który pojawia się kiedy jakiś proces modyfikowania figury jest aktywny. \mbox{\label{class_geo_graphic_x_a8762800b9c7eaf083f30f7dec13921e3}} 
+\index{Geo\+GraphicX@{Geo\+GraphicX}!temporary\+Drawable\+Objects@{temporary\+Drawable\+Objects}}
+\index{temporary\+Drawable\+Objects@{temporary\+Drawable\+Objects}!Geo\+GraphicX@{Geo\+GraphicX}}
+\subsubsection{temporary\+Drawable\+Objects}
+{\footnotesize\ttfamily Array\+List$<$Shape$>$ Geo\+Graphic\+X.\+temporary\+Drawable\+Objects = new Array\+List$<$$>$()}
+
+Lista zawierająca tymczasowe figury pomocniczne do rysowania. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/\+Adimus/\+Desktop/\+N\+E\+T\+B\+I\+N\+Z/\+Geo\+Graphic\+X/src/Geo\+Graphic\+X.\+java\end{DoxyCompactItemize}

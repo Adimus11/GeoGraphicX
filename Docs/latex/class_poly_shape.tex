@@ -1,0 +1,152 @@
+\section{Poly\+Shape Class Reference}
+\label{class_poly_shape}\index{Poly\+Shape@{Poly\+Shape}}
+Inheritance diagram for Poly\+Shape\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_poly_shape}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Poly\+Shape} ()
+\item 
+void \textbf{ set\+Dimensions} (Array\+List$<$ Point $>$ points\+List)
+\item 
+void \textbf{ move} (int x, int y)
+\item 
+Shape \textbf{ get\+Shape} ()
+\item 
+boolean \textbf{ is\+Hit} (float x, float y)
+\item 
+void \textbf{ set\+Color} (Color new\+Color)
+\item 
+Color \textbf{ get\+Color} ()
+\item 
+void \textbf{ resize} (float value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Polygon \textbf{ poly\+Shape}
+\item 
+float \textbf{ centerX}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa odpowiedzialna za wielokąt. \begin{DoxyAuthor}{Author}
+Michał Treter 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_poly_shape_a1ac35b96be61a45c324792ed1cbd2463}} 
+\index{Poly\+Shape@{Poly\+Shape}!Poly\+Shape@{Poly\+Shape}}
+\index{Poly\+Shape@{Poly\+Shape}!Poly\+Shape@{Poly\+Shape}}
+\subsubsection{Poly\+Shape()}
+{\footnotesize\ttfamily Poly\+Shape.\+Poly\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Konstuktor klasy. Przypisuje pusty wielokąt. 
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_poly_shape_adc6cbbc34dfdc5cdf492697378baee96}} 
+\index{Poly\+Shape@{Poly\+Shape}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!Poly\+Shape@{Poly\+Shape}}
+\subsubsection{get\+Color()}
+{\footnotesize\ttfamily Color Poly\+Shape.\+get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda zwracjąca akutalny kolor figury. \begin{DoxyReturn}{Returns}
+aktualny kolor figury. 
+\end{DoxyReturn}
+\mbox{\label{class_poly_shape_a76f38be1401146e9d7d29e7fcc352e35}} 
+\index{Poly\+Shape@{Poly\+Shape}!get\+Shape@{get\+Shape}}
+\index{get\+Shape@{get\+Shape}!Poly\+Shape@{Poly\+Shape}}
+\subsubsection{get\+Shape()}
+{\footnotesize\ttfamily Shape Poly\+Shape.\+get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda zwracająca kształt figury. \begin{DoxyReturn}{Returns}
+Kształ wielokątu. 
+\end{DoxyReturn}
+\mbox{\label{class_poly_shape_ae38333d9b47fd540e8f5c16ba285627a}} 
+\index{Poly\+Shape@{Poly\+Shape}!is\+Hit@{is\+Hit}}
+\index{is\+Hit@{is\+Hit}!Poly\+Shape@{Poly\+Shape}}
+\subsubsection{is\+Hit()}
+{\footnotesize\ttfamily boolean Poly\+Shape.\+is\+Hit (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Metoda odpowiedzialna za sprawdzenie czy dane współrzedne znajdują sie w figurze. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Współrzędna X kliknięcia. \\
+\hline
+{\em y} & Współrzędna Y kliknięcia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartość logiczna, prawdziwa jeśli punkty są w figurze, zaś fałyszwa w przeciwnym wypadku. 
+\end{DoxyReturn}
+\mbox{\label{class_poly_shape_a8e0760e4b7e078bd5db185f5c09c7158}} 
+\index{Poly\+Shape@{Poly\+Shape}!move@{move}}
+\index{move@{move}!Poly\+Shape@{Poly\+Shape}}
+\subsubsection{move()}
+{\footnotesize\ttfamily void Poly\+Shape.\+move (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Metoda przesuwająca wielokąt w osi X i osi Y. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Wartość o jaką należy przesunąć figurę w osi X. \\
+\hline
+{\em y} & Wartość o jaką należy przesunąć figurę w osi Y. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_poly_shape_ae62899d2851dbd8156b9d4162807fe30}} 
+\index{Poly\+Shape@{Poly\+Shape}!resize@{resize}}
+\index{resize@{resize}!Poly\+Shape@{Poly\+Shape}}
+\subsubsection{resize()}
+{\footnotesize\ttfamily void Poly\+Shape.\+resize (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+Metoda zmieniająca rozmiar figur. 
+\begin{DoxyParams}{Parameters}
+{\em value} & Wartość o jaką należy zmienić rozmiar figury. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_poly_shape_a040120940c2e88f61aa83b475143a5db}} 
+\index{Poly\+Shape@{Poly\+Shape}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Poly\+Shape@{Poly\+Shape}}
+\subsubsection{set\+Color()}
+{\footnotesize\ttfamily void Poly\+Shape.\+set\+Color (\begin{DoxyParamCaption}\item[{Color}]{new\+Color }\end{DoxyParamCaption})}
+
+Metoda ustawiająca figurze nowy kolor. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Color} & Nowy kolor. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_poly_shape_ad726002d0715c48fb3170d217c2776b8}} 
+\index{Poly\+Shape@{Poly\+Shape}!set\+Dimensions@{set\+Dimensions}}
+\index{set\+Dimensions@{set\+Dimensions}!Poly\+Shape@{Poly\+Shape}}
+\subsubsection{set\+Dimensions()}
+{\footnotesize\ttfamily void Poly\+Shape.\+set\+Dimensions (\begin{DoxyParamCaption}\item[{Array\+List$<$ Point $>$}]{points\+List }\end{DoxyParamCaption})}
+
+Metoda ustawiająca pozycje oraz rozmiar wielokątu poprzez dodawanie punktów do jego struktury. 
+\begin{DoxyParams}{Parameters}
+{\em points\+List} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{class_poly_shape_a651a20eeb881b58cd9f55aa63e9a859c}} 
+\index{Poly\+Shape@{Poly\+Shape}!centerX@{centerX}}
+\index{centerX@{centerX}!Poly\+Shape@{Poly\+Shape}}
+\subsubsection{centerX}
+{\footnotesize\ttfamily float Poly\+Shape.\+centerX\hspace{0.3cm}{\ttfamily [protected]}}
+
+Zmienna zawierjąca X środka figury. \mbox{\label{class_poly_shape_a7115455fc518afe762f1aba1078ff4b2}} 
+\index{Poly\+Shape@{Poly\+Shape}!poly\+Shape@{poly\+Shape}}
+\index{poly\+Shape@{poly\+Shape}!Poly\+Shape@{Poly\+Shape}}
+\subsubsection{poly\+Shape}
+{\footnotesize\ttfamily Polygon Poly\+Shape.\+poly\+Shape\hspace{0.3cm}{\ttfamily [protected]}}
+
+Kształt wielokątu. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/\+Adimus/\+Desktop/\+N\+E\+T\+B\+I\+N\+Z/\+Geo\+Graphic\+X/src/Poly\+Shape.\+java\end{DoxyCompactItemize}

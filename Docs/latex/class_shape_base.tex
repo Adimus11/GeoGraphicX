@@ -1,0 +1,120 @@
+\section{Shape\+Base Class Reference}
+\label{class_shape_base}\index{Shape\+Base@{Shape\+Base}}
+Inheritance diagram for Shape\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_shape_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract Shape \textbf{ get\+Shape} ()
+\item 
+abstract boolean \textbf{ is\+Hit} (float x, float y)
+\item 
+abstract void \textbf{ move} (int x, int y)
+\item 
+abstract void \textbf{ resize} (float value)
+\item 
+abstract void \textbf{ set\+Color} (Color new\+Color)
+\item 
+abstract Color \textbf{ get\+Color} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Color \textbf{ shape\+Color} = Color.\+R\+ED
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstrakcyjna klasa odpowiedzialna za kształt figur. \begin{DoxyAuthor}{Author}
+Michał Treter 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_shape_base_aa2273c89bbd03d978c7a750293180fcb}} 
+\index{Shape\+Base@{Shape\+Base}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!Shape\+Base@{Shape\+Base}}
+\subsubsection{get\+Color()}
+{\footnotesize\ttfamily abstract Color Shape\+Base.\+get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Abstrakcyjna metoda zwracająca kolor kształtu. \begin{DoxyReturn}{Returns}
+Aktualny kolor kształtu. 
+\end{DoxyReturn}
+\mbox{\label{class_shape_base_a0862131e56fc22f4315c01104f04b7c2}} 
+\index{Shape\+Base@{Shape\+Base}!get\+Shape@{get\+Shape}}
+\index{get\+Shape@{get\+Shape}!Shape\+Base@{Shape\+Base}}
+\subsubsection{get\+Shape()}
+{\footnotesize\ttfamily abstract Shape Shape\+Base.\+get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Abstrakcyjna metoda zwracająca kształt figury. \begin{DoxyReturn}{Returns}
+Kształt figury. 
+\end{DoxyReturn}
+\mbox{\label{class_shape_base_ac97cceedf62e85921e13a923599122dc}} 
+\index{Shape\+Base@{Shape\+Base}!is\+Hit@{is\+Hit}}
+\index{is\+Hit@{is\+Hit}!Shape\+Base@{Shape\+Base}}
+\subsubsection{is\+Hit()}
+{\footnotesize\ttfamily abstract boolean Shape\+Base.\+is\+Hit (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Abstrakcyjna metoda sprawdzając czy punkt znajduje się w kształcie. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X punktu. \\
+\hline
+{\em y} & Y punktu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartość logiczna prawdziwa jeśli jest, fałszywa w przeciwnym wypadku. 
+\end{DoxyReturn}
+\mbox{\label{class_shape_base_a3408a350806c5e86336d6f628a46ad7c}} 
+\index{Shape\+Base@{Shape\+Base}!move@{move}}
+\index{move@{move}!Shape\+Base@{Shape\+Base}}
+\subsubsection{move()}
+{\footnotesize\ttfamily abstract void Shape\+Base.\+move (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Abstrakcyjna metoda przesuwająca kształt w osi X i osi Y. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Wartość o ile przesunąć w osi X. \\
+\hline
+{\em y} & Wartość o ile przesunąć w osi X. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_shape_base_a0fc59d3f84903c188ac76c7d9648a2d2}} 
+\index{Shape\+Base@{Shape\+Base}!resize@{resize}}
+\index{resize@{resize}!Shape\+Base@{Shape\+Base}}
+\subsubsection{resize()}
+{\footnotesize\ttfamily abstract void Shape\+Base.\+resize (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Abstrakcyjna metoda zmieniająca rozmiar kształtu. 
+\begin{DoxyParams}{Parameters}
+{\em value} & Wartość o jaką zostaje zmniejszony rozmiar. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_shape_base_ac42b08e5966d3b53fbaa0ba077306fce}} 
+\index{Shape\+Base@{Shape\+Base}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Shape\+Base@{Shape\+Base}}
+\subsubsection{set\+Color()}
+{\footnotesize\ttfamily abstract void Shape\+Base.\+set\+Color (\begin{DoxyParamCaption}\item[{Color}]{new\+Color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Abstrakcyjna metoda zmieniająca kolor kształtu. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Color} & Nowy kolor. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{class_shape_base_aaf94f09219195ef803a3c6d2b67eca8e}} 
+\index{Shape\+Base@{Shape\+Base}!shape\+Color@{shape\+Color}}
+\index{shape\+Color@{shape\+Color}!Shape\+Base@{Shape\+Base}}
+\subsubsection{shape\+Color}
+{\footnotesize\ttfamily Color Shape\+Base.\+shape\+Color = Color.\+R\+ED\hspace{0.3cm}{\ttfamily [protected]}}
+
+Kolor Figur. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/\+Adimus/\+Desktop/\+N\+E\+T\+B\+I\+N\+Z/\+Geo\+Graphic\+X/src/Shape\+Base.\+java\end{DoxyCompactItemize}

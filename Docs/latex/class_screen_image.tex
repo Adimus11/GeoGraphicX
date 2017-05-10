@@ -1,0 +1,139 @@
+\section{Screen\+Image Class Reference}
+\label{class_screen_image}\index{Screen\+Image@{Screen\+Image}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Buffered\+Image \textbf{ create\+Image} (J\+Component component)
+\item 
+static Buffered\+Image \textbf{ create\+Image} (J\+Component component, Rectangle region)
+\item 
+static Buffered\+Image \textbf{ create\+Desktop\+Image} ()  throws A\+W\+T\+Exception, I\+O\+Exception 	
+\item 
+static Buffered\+Image \textbf{ create\+Image} (Component component)  throws A\+W\+T\+Exception 	
+\item 
+static Buffered\+Image \textbf{ create\+Image} (Rectangle region)  throws A\+W\+T\+Exception 	
+\item 
+static void \textbf{ write\+Image} (Buffered\+Image image, String file\+Name)  throws I\+O\+Exception 	
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Adimus 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_screen_image_a5474c7930746d66cad780ab238197f14}} 
+\index{Screen\+Image@{Screen\+Image}!create\+Desktop\+Image@{create\+Desktop\+Image}}
+\index{create\+Desktop\+Image@{create\+Desktop\+Image}!Screen\+Image@{Screen\+Image}}
+\subsubsection{create\+Desktop\+Image()}
+{\footnotesize\ttfamily static Buffered\+Image Screen\+Image.\+create\+Desktop\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws A\+W\+T\+Exception, I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Convenience method to create a Buffered\+Image of the desktop
+
+\begin{DoxyReturn}{Returns}
+image the image for the given region 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em A\+W\+T\+Exception} & see Robot class constructors \\
+\hline
+{\em I\+O\+Exception} & if an error occurs during writing \\
+\hline
+\end{DoxyExceptions}
+\mbox{\label{class_screen_image_aaed2036a73612159556089a64a1176c9}} 
+\index{Screen\+Image@{Screen\+Image}!create\+Image@{create\+Image}}
+\index{create\+Image@{create\+Image}!Screen\+Image@{Screen\+Image}}
+\subsubsection{create\+Image()\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily static Buffered\+Image Screen\+Image.\+create\+Image (\begin{DoxyParamCaption}\item[{J\+Component}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_screen_image_a183a0c1a76eb4735c386e84afcf76a8b}} 
+\index{Screen\+Image@{Screen\+Image}!create\+Image@{create\+Image}}
+\index{create\+Image@{create\+Image}!Screen\+Image@{Screen\+Image}}
+\subsubsection{create\+Image()\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily static Buffered\+Image Screen\+Image.\+create\+Image (\begin{DoxyParamCaption}\item[{J\+Component}]{component,  }\item[{Rectangle}]{region }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+{\em region} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_screen_image_ae3027318c36c5e08a76f721a9e5993f3}} 
+\index{Screen\+Image@{Screen\+Image}!create\+Image@{create\+Image}}
+\index{create\+Image@{create\+Image}!Screen\+Image@{Screen\+Image}}
+\subsubsection{create\+Image()\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily static Buffered\+Image Screen\+Image.\+create\+Image (\begin{DoxyParamCaption}\item[{Component}]{component }\end{DoxyParamCaption}) throws A\+W\+T\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em A\+W\+T\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\label{class_screen_image_ae702af456800f1d99bf63cc7f5d48371}} 
+\index{Screen\+Image@{Screen\+Image}!create\+Image@{create\+Image}}
+\index{create\+Image@{create\+Image}!Screen\+Image@{Screen\+Image}}
+\subsubsection{create\+Image()\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static Buffered\+Image Screen\+Image.\+create\+Image (\begin{DoxyParamCaption}\item[{Rectangle}]{region }\end{DoxyParamCaption}) throws A\+W\+T\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a Buffered\+Image from a rectangular region on the screen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em region} & region on the screen to create image from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+image the image for the given region 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em A\+W\+T\+Exception} & see Robot class constructors \\
+\hline
+\end{DoxyExceptions}
+\mbox{\label{class_screen_image_a3108ac4f1167f1ef23a9061b70743a35}} 
+\index{Screen\+Image@{Screen\+Image}!write\+Image@{write\+Image}}
+\index{write\+Image@{write\+Image}!Screen\+Image@{Screen\+Image}}
+\subsubsection{write\+Image()}
+{\footnotesize\ttfamily static void Screen\+Image.\+write\+Image (\begin{DoxyParamCaption}\item[{Buffered\+Image}]{image,  }\item[{String}]{file\+Name }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Write a Buffered\+Image to a File.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & image to be written \\
+\hline
+{\em file\+Name} & name of file to be created \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an error occurs during writing \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/\+Adimus/\+Desktop/\+N\+E\+T\+B\+I\+N\+Z/\+Geo\+Graphic\+X/src/Screen\+Image.\+java\end{DoxyCompactItemize}
